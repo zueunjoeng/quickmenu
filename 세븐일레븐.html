@@ -23,11 +23,8 @@
         position:fixed;
         right:0;
         width: 80px;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        top:0;
-        bottom:0;
+        top: 50%;
+        transform: translateY(-50%);
     }
   #quick li{
     width: 220px;
@@ -38,10 +35,10 @@
     }
   
   #quick li:hover a{
-    margin-left:-120px;
+    transform: translateX(-35%)
     }
   #quick li i{
-    width: 80px;
+    width: 35px;
     display : inline-block;
     }
     #quick li:nth-child(2) a{
