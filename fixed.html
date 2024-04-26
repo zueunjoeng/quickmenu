@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션_위치</title>
+    <style>
+        body{height:3000px;
+        }
+        header{
+            position: fixed;  /* 기준을 브라우저로 생각하겠다 */
+            top: 0px; /* top, left, right숫자가 커질수록 안으로 패딩된다고 보면 이해하기 쉽다 */
+            left:0px;
+            right:0;
+            background-color: yellow;
+            height:50px;
+            transition:0.5s;  
+        }
+        header:hover{
+            height:100px;
+        }
+        aside{
+            background-color: black;
+            width:50px;
+            height:50px;
+            position: fixed;
+       
+            right:30px;     
+            bottom:30px;
+        
+            border-radius :50% 0;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <aside></aside>
+</body>
+</html>
